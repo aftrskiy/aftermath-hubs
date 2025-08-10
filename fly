@@ -36,8 +36,8 @@ up.Name = "up"
 up.Parent = Frame
 up.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 up.Size = UDim2.new(0, 44, 0, 28)
-up.Font = Enum.Font.SourceSans
-up.Text = "↑"
+up.FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+up.Text = "up"
 up.TextColor3 = Color3.fromRGB(0, 255, 0)
 up.TextSize = 17.000
 
@@ -46,8 +46,8 @@ down.Parent = Frame
 down.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 down.Position = UDim2.new(0, 0, 0.491228074, 0)
 down.Size = UDim2.new(0, 44, 0, 28)
-down.Font = Enum.Font.SourceSans
-down.Text = "↓"
+down.FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+down.Text = "down"
 down.TextColor3 = Color3.fromRGB(255, 0, 0)
 down.TextSize = 17.000
 
@@ -57,7 +57,7 @@ onof.Parent = Frame
 onof.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 onof.Position = UDim2.new(0.702823281, 0, 0.491228074, 0)
 onof.Size = UDim2.new(0, 55.4, 0, 28)
-onof.Font = Enum.Font.SourceSans
+onof.FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
 onof.Text = "FLY"
 onof.TextColor3 = Color3.fromRGB(0, 255, 255)
 onof.TextSize = 14.700
@@ -147,22 +147,10 @@ local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
 nowe = false
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "AntiOder Fly";
-	Text = "by AFTRSKIY AnTiOdEr";
+	Title = "AntiOder Fly V2";
+	Text = "aftrskiy.xyz";
 	Icon = "rbxthumb://type=Asset&id=11935868660&w=150&h=150"})
 Duration = 15;
-
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "AntiOder Fly";
-	Text = "Gui Fly для антиодеров";
-	Icon = "rbxthumb://type=Asset&id=11935883214&w=150&h=150"})
-Duration = 10;
-
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "AntiOder Fly";
-	Text = "created by Aftrskiy!";
-	Icon = "rbxthumb://type=Asset&id=11935866652&w=150&h=150"})
-Duration = 30;
 
 Frame.Active = true -- main = gui
 Frame.Draggable = true
