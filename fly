@@ -1,11 +1,11 @@
 local player = game.Players.LocalPlayer
 if player.Name == "matroskin046" then
    game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "cement detected!";
-	Text = "aftrskiy.xyz";
-	Icon = "rbxthumb://type=Asset&id=11935868660&w=150&h=150"})
-    Duration = 15;
-    flytext = "cement fly v1"
+	   Title = "cement detected!";
+	   Text = "aftrskiy.xyz";
+	   Icon = "rbxthumb://type=Asset&id=11935868660&w=150&h=150"})
+       Duration = 15;
+   flytext = "cement fly v1"
 else
    print("debugged")
    flytext = "AntiOder Fly v2.1"
