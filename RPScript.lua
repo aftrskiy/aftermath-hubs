@@ -336,7 +336,7 @@ local CustomTab = Window:MakeTab({
 
 
 CustomTab:AddTextbox({
-	Name = "Кастомное действие (без звездочек)",
+	Name = "Кастомное действие (писать без звездочек)",
 	Default = "",
 	TextDisappear = false,
 	Callback = function(action)
@@ -817,9 +817,167 @@ ETab:AddButton({
 })
 
 ETab:AddButton({
-	Name = ",
+	Name = "Прищуриться",
 	Callback = function()
-      	local message = "*Испугался*"
+      	local message = "*Прищурился*"
 	sendChatMessage(message)
   	end    
 })
+
+ETab:AddButton({
+	Name = "Насторожиться",
+	Callback = function()
+      	local message = "*Насторожился*"
+	sendChatMessage(message)
+  	end    
+})
+
+ETab:AddButton({
+	Name = "Заподозорить что то неладное",
+	Callback = function()
+      	local message = "*Заподозорил что то неладное*"
+	sendChatMessage(message)
+  	end    
+})
+
+ETab:AddButton({
+	Name = "Осознать",
+	Callback = function()
+      	local message = "*Осознал*"
+	sendChatMessage(message)
+  	end    
+})
+
+ETab:AddButton({
+	Name = "Смех",
+	Callback = function()
+      	local message = "*Смеется*"
+	sendChatMessage(message)
+  	end    
+})
+
+ETab:AddButton({
+	Name = "Злобно усмехнуться",
+	Callback = function()
+      	local message = "*Злобно усмехнулся*"
+	sendChatMessage(message)
+  	end    
+})
+
+ETab:AddButton({
+	Name = "Разозлиться",
+	Callback = function()
+      	local message = "*Разозлился*"
+	sendChatMessage(message)
+  	end    
+})
+
+ETab:AddButton({
+	Name = "Крикнуть",
+	Callback = function()
+      	local message = "*Крикнул*"
+	sendChatMessage(message)
+  	end    
+})
+
+ETab:AddButton({
+	Name = "Ужаснуться",
+	Callback = function()
+      	local message = "*Ужаснулся*"
+	sendChatMessage(message)
+  	end    
+})
+
+ETab:AddButton({
+	Name = "Разочароваться",
+	Callback = function()
+      	local message = "*Разочаровался*"
+	sendChatMessage(message)
+  	end    
+})
+
+local PreTab = Window:MakeTab({
+	Name = "Преступное",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+PreTab:AddButton({
+	Name = "Взлом наручников",
+	Callback = function()
+      	local message = "*Достал с кармана скрепку*"
+	local message1 = "*Легким движением руки вставил скрепку в замок наручников*"
+	local message2 = "*Открыл наручники, сбросив их с рук*"
+	sendChatMessage(message)
+	wait(2)
+	sendChatMessage(message1)
+	wait(2)
+	sendChatMessage(message2)
+  	end    
+})
+
+PreTab:AddButton({
+	Name = "Взлом наручников силой",
+	Callback = function()
+      	local message = "*Напряг кулаки*"
+	local message1 = "*Резкими движениями расправил руки с стороны*"
+	local message2 = "*Сломал наручники*"
+	sendChatMessage(message)
+	wait(2)
+	sendChatMessage(message1)
+	wait(2)
+	sendChatMessage(message2)
+  	end    
+})
+
+PreTab:AddButton({
+	Name = "Взлом двери",
+	Callback = function()
+      	local message = "*Достал с кармана отмычку*"
+	local message1 = "*Легким движением руки вставил отмычку в замок двери*"
+	local message2 = "*Провернул отмычку*"
+	local message3 = "*Дверь открылась*"
+	sendChatMessage(message)
+	wait(2)
+	sendChatMessage(message1)
+	wait(2)
+	sendChatMessage(message2)
+	wait(2)
+	sendChatMessage(message3)
+  	end    
+})
+
+PreTab:AddButton({
+	Name = "Взлом двери машины",
+	Callback = function()
+      	local message = "*Достал с кармана отмычку*"
+	local message1 = "*Легким движением руки вставил отмычку в дверной замок автомобиля*"
+	local message2 = "*Провернул отмычку, тем самым открыв дверь автомобиля*"
+	local message3 = "*Дверь открылась*"
+	sendChatMessage(message)
+	wait(2)
+	sendChatMessage(message1)
+	wait(2)
+	sendChatMessage(message2)
+	wait(2)
+	sendChatMessage(message3)
+  	end    
+})
+
+PreTab:AddButton({
+	Name = "Взлом двери машины силой",
+	Callback = function()
+      	local message = "*Замахнулся кулаком*"
+	local message1 = "*Резко ударил по стеклу автомобильной двери*"
+	local message2 = "*Сунул руку внутрь салона через разбитое окно, открыв дверь*"
+	local message3 = "*Дверь открылась*"
+	sendChatMessage(message)
+	wait(2)
+	sendChatMessage(message1)
+	wait(2)
+	sendChatMessage(message2)
+	wait(2)
+	sendChatMessage(message3)
+  	end    
+})
+
