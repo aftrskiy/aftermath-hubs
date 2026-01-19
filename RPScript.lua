@@ -15,7 +15,7 @@ local function sendChatMessage(message)
 end
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/kigredns/guiformyfriend/refs/heads/main/redversion.lua')))()
-local Window = OrionLib:MakeWindow({Name = "RP Hub 2.51 special", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "by sparkstorm"})
+local Window = OrionLib:MakeWindow({Name = "RP Hub 2.52 special", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "by sparkstorm"})
 
 local InfoTab = Window:MakeTab({
 	Name = "Информация",
@@ -26,7 +26,7 @@ local InfoTab = Window:MakeTab({
 InfoTab:AddParagraph("Инфа о скрипте","был написан sparkstorm (бывший aftr или aftrskiy), создатель отыгровок: Zzzzzzoooooodf и 1geriffdu")
 InfoTab:AddLabel("Инжектор: "..identifyexecutor())
 InfoTab:AddLabel("Статус чата: "..chatstatus)
-InfoTab:AddParagraph("ВЕРСИЯ 2.5 | ИЗМЕНЕНИЯ","обнова спустя полгода (ну хоть когда то) | добавлены вкладки эмоции и преступные | добавлен статус чата")
+InfoTab:AddParagraph("ВЕРСИЯ 2.52 | ИЗМЕНЕНИЯ","изменено кд в отыгровках между действиями — 2 -> 0.5 сек.")
 InfoTab:AddButton({
 		Name = "МОЙ НОВЫЙ ПРОЕКТ LUAU",
 		Callback = function()
