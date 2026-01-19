@@ -31,7 +31,6 @@ InfoTab:AddButton({
 		Name = "МОЙ НОВЫЙ ПРОЕКТ LUAU",
 		Callback = function()
 			setclipboard("https://t.me/luauniversal")
-			ens
 		end
 })
 
@@ -51,13 +50,13 @@ Tab:AddButton({
 	local message3 = "*Вытянул руку из кармана*"
 	local message4 = "*Легким движением руки передал паспорт человеку на против*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message4)
   	end    
 })
@@ -70,11 +69,11 @@ Tab:AddButton({
 	local message2 = "*Легким движением руки положил паспорт в карман*"
 	local message3 = "*Паспорт в кармане*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
   	end    
 })
@@ -88,13 +87,13 @@ Tab:AddButton({
 	local message3 = "*Медкарта в руке*"
 	local message4 = "*Легким движением руки передал медкарту человеку напротив*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message4)
   	end    
 })
@@ -107,11 +106,11 @@ Tab:AddButton({
 	local message2 = "*Легким движением руки положил медкарту в карман*"
 	local message3 = "*Паспорт в кармане*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
   	end    
 })
@@ -124,11 +123,11 @@ Tab:AddButton({
 	local message2 = "*Достал водительское удостоверение*"
 	local message3 = "*Легким движением руки передал водительское удостоверение человеку напротив*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
   	end    
 })
@@ -141,11 +140,11 @@ Tab:AddButton({
 	local message2 = "*Легким движением руки положил водительское удостоверение в карман*"
 	local message3 = "*Водительское удостоверение в кармане*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
   	end    
 })
@@ -165,13 +164,13 @@ PoliceTab:AddButton({
 	local message3 = "*Резкими движениями накинул наручники*"
 	local message4 = "*Закрепил наручники*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message4)
   	end    
 })
@@ -185,13 +184,13 @@ PoliceTab:AddButton({
 	local message3 = "*Положил наручники на пояс*"
 	local message4 = "*Наручники на поясе*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message4)
   	end    
 })
@@ -205,13 +204,13 @@ PoliceTab:AddButton({
 	local message3 = "*Дубинка в руке*"
 	local message4 = "*Ударил дубинкой человека напротив*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message4)
   	end    
 })
@@ -231,9 +230,9 @@ PoliceTab:AddButton({
 	local message1 = "*Прикрепил дубинку к поясу*"
 	local message2 = "*Дубинка на поясе*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
   	end    
 })
@@ -255,11 +254,11 @@ CarTab:AddButton({
 	local message2 = "*Затолкал преступника в автомобиль затем закрыл дверь*"
 	local message3 = "*Преступник в машине*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
   	end    
 })
@@ -272,11 +271,11 @@ CarTab:AddButton({
 	local message2 = "*Вытолкал преступника с машины*"
 	local message3 = "*Закрыл дверь*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
   	end    
 })
@@ -290,13 +289,13 @@ CarTab:AddButton({
 	local message3 = "*Легким движем руки вставил ключ в стартер автомобиля*"
 	local message4 = "*Автомобиль завелся*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message4)
   	end    
 })
@@ -308,9 +307,9 @@ CarTab:AddButton({
 	local message1 = "*Положил ключ в карман*"
 	local message2 = "*Ключ в кармане*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
   	end    
 })
@@ -369,13 +368,13 @@ FightTab:AddButton({
 	local message3 = "*Враг в нокауте*"
 	local message4 = "*Добивает ногой*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message4)
   	end    
 })
@@ -386,7 +385,7 @@ FightTab:AddButton({
       	local message = "*Наклонил пистолет на 30°*"
 	local message1 = "*Ударил рукояткой по голове*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
   	end    
 })
@@ -397,7 +396,7 @@ FightTab:AddButton({
       	local message = "*Развернул автомат*"
 	local message1 = "*С размаху ударил рукояткой автомата*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
   	end    
 })
@@ -407,7 +406,7 @@ FightTab:AddButton({
 	Callback = function()
       	local message = "*Ударил ногой в грудь*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
   	end    
 })
@@ -418,7 +417,7 @@ FightTab:AddButton({
       	local message = "*Замахнулся ногой*"
 	local message1 = "*С разворота ударил ногой в голову*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
   	end    
 })
@@ -429,7 +428,7 @@ FightTab:AddButton({
       	local message = "*Ударил двумя руками в два виска*"
 	local message1 = "*Оглушил*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
   	end    
 })
@@ -442,9 +441,9 @@ FightTab:AddButton({
 	local message1 = "*Ударил головой об колено*"
 	local message2 = "*Бьет коленом об голову*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
   	end    
 })
@@ -455,7 +454,7 @@ FightTab:AddButton({
       	local message = "*Ударил с размаху головой*"
 	local message1 = "*Оглушил*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
   	end    
 })
@@ -473,9 +472,9 @@ LoseTab:AddButton({
 	local message1 = "*Еле держится на ногах отходя назад*"
 	local message2 = "*Падает на пол*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
   	end    
 })
@@ -488,11 +487,11 @@ LoseTab:AddButton({
 	local message2 = "*Теряет сознание иза потери крови*"
 	local message3 = "*Упал на пол*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
   	end    
 })
@@ -505,11 +504,11 @@ LoseTab:AddButton({
 	local message2 = "*Еле держится на ногах*"
 	local message3 = "*Упал на пол*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
   	end    
 })
@@ -523,13 +522,13 @@ LoseTab:AddButton({
 	local message3 = "*Ноги дрожат*"
 	local message4 = "*Упал на пол*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message4)
   	end    
 })
@@ -542,11 +541,11 @@ LoseTab:AddButton({
 	local message2 = "*Оглушение проходит**"
 	local message3 = "*Оглушение прошло*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
   	end    
 })
@@ -626,7 +625,7 @@ HealthTab:AddButton({
       	local message = "*Достал бинт из кармана*"
 	local message1 = "*Начал перевязывать рану*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
   	end    
 })
@@ -638,9 +637,9 @@ HealthTab:AddButton({
 	local message1 = "*Приложил горячее дуло пистолета к ране*"
 	local message2 = "*Прижёг рану*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
   	end    
 })
@@ -651,7 +650,7 @@ HealthTab:AddButton({
       	local message = "*Ковыряет с раны пулю*"
 	local message1 = "*Вытаскивает пулю с раны*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
   	end    
 })
@@ -664,11 +663,11 @@ HealthTab:AddButton({
 	local message2 = "*Пуля в зубах*"
 	local message3 = "*Выплюнул пулю*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
   	end    
 })
@@ -694,37 +693,37 @@ CarTab:AddButton({
 	local message15 = "*Поставил заправочный пистолет обратно на стойку*"
 	local message16 = "*Закрыл бензобак*"		
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message4)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message5)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message6)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message7)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message8)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message9)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message10)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message11)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message12)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message13)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message14)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message15)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message16)
   	end    
 })
@@ -763,7 +762,7 @@ TacTab:AddButton({
       	local message = "*Выглянул из-за угла*"
 	local message1 = "*Осмотрелся*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
   	end    
 })
@@ -777,13 +776,13 @@ TacTab:AddButton({
 	local message3 = "*Взял из кармана новый магазин*"
 	local message4 = "*Вставил новый магазин в пистолет*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
-	wait(2)
+	wait(0.5)
         sendChatMessage(message4)
   	end    
 })
@@ -797,13 +796,13 @@ TacTab:AddButton({
 	local message3 = "*Взял из кармана новый магазин*"
 	local message4 = "*Вставил новый магазин в автомат*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
-	wait(2)
+	wait(0.5)
         sendChatMessage(message4)
   	end    
 })
@@ -915,9 +914,9 @@ PreTab:AddButton({
 	local message1 = "*Легким движением руки вставил скрепку в замок наручников*"
 	local message2 = "*Открыл наручники, сбросив их с рук*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
   	end    
 })
@@ -929,9 +928,9 @@ PreTab:AddButton({
 	local message1 = "*Резкими движениями расправил руки с стороны*"
 	local message2 = "*Сломал наручники*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
   	end    
 })
@@ -944,11 +943,11 @@ PreTab:AddButton({
 	local message2 = "*Провернул отмычку*"
 	local message3 = "*Дверь открылась*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
   	end    
 })
@@ -961,11 +960,11 @@ PreTab:AddButton({
 	local message2 = "*Провернул отмычку, тем самым открыв дверь автомобиля*"
 	local message3 = "*Дверь открылась*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
   	end    
 })
@@ -978,11 +977,11 @@ PreTab:AddButton({
 	local message2 = "*Сунул руку внутрь салона через разбитое окно, открыв дверь*"
 	local message3 = "*Дверь открылась*"
 	sendChatMessage(message)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message1)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message2)
-	wait(2)
+	wait(0.5)
 	sendChatMessage(message3)
   	end    
 })
