@@ -1,5 +1,5 @@
--- real
-
+-- fuck niggers 
+chatstatus = "ДОСТУПЕН"
 local function sendChatMessage(message)
     if game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents") then
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
@@ -10,11 +10,12 @@ local function sendChatMessage(message)
         end
     else
         warn("Chat system not found!")
+		chatstatus = "НЕДОСТУПЕН!"
     end
 end
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/kigredns/guiformyfriend/refs/heads/main/redversion.lua')))()
-local Window = OrionLib:MakeWindow({Name = "RP script 2.0 special", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "by Aftr"})
+local Window = OrionLib:MakeWindow({Name = "RP Hub 2.5 special", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "by sparkstorm"})
 
 local InfoTab = Window:MakeTab({
 	Name = "Информация",
@@ -22,8 +23,10 @@ local InfoTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-InfoTab:AddParagraph("Инфа о скрипте","был написан Aftr.lua, создатель отыгровок: Zzzzzzoooooodf и 1geriffdu")
+InfoTab:AddParagraph("Инфа о скрипте","был написан sparkstorm (бывший aftr или aftrskiy), создатель отыгровок: Zzzzzzoooooodf и 1geriffdu")
 InfoTab:AddLabel("Инжектор: "..identifyexecutor())
+InfoTab:AddLabel("Статус чата: "..chatstatus)
+InfoTab:AddParagraph("ВЕРСИЯ 2.5 | ИЗМЕНЕНИЯ","обнова спустя полгода (ну хоть когда то) | добавлена вкладка эмоции | добавлен статус чата")
 
 
 
@@ -799,3 +802,24 @@ TacTab:AddButton({
   	end    
 })
 
+local ETab = Window:MakeTab({
+	Name = "Эмоции",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+ETab:AddButton({
+	Name = "Испугаться",
+	Callback = function()
+      	local message = "*Испугался*"
+	sendChatMessage(message)
+  	end    
+})
+
+ETab:AddButton({
+	Name = ",
+	Callback = function()
+      	local message = "*Испугался*"
+	sendChatMessage(message)
+  	end    
+})
