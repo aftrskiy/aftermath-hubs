@@ -37,7 +37,7 @@ local function sendChatMessage(message)
 end
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/kigredns/guiformyfriend/refs/heads/main/redversion.lua')))()
-local Window = OrionLib:MakeWindow({Name = "RP Hub 2.6 special", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "by sparkstorm"})
+local Window = OrionLib:MakeWindow({Name = "RP Hub 2.7 special", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "by sparkstorm"})
 
 local InfoTab = Window:MakeTab({
 	Name = "Информация",
@@ -48,7 +48,7 @@ local InfoTab = Window:MakeTab({
 InfoTab:AddParagraph("Инфа о скрипте","был написан sparkstorm (бывший aftr или aftrskiy), создатель отыгровок: Zzzzzzoooooodf и 1geriffdu")
 InfoTab:AddLabel("Инжектор: "..identifyexecutor())
 InfoTab:AddLabel("Статус чата: "..chatstatus)
-InfoTab:AddParagraph("ВЕРСИЯ 2.6 | ИЗМЕНЕНИЯ","изменено кд в отыгровках между действиями — 0.5 -> 1 сек | добавлен ключ и бан система | добавлен крик со своими словами.")
+InfoTab:AddParagraph("ВЕРСИЯ 2.7 | ИЗМЕНЕНИЯ","")
 InfoTab:AddParagraph("концепты","изменение интерфейса в скрипте, добавление вкладки фразы")
 InfoTab:AddButton({
 		Name = "МОЙ НОВЫЙ ПРОЕКТ LUAU",
@@ -127,7 +127,7 @@ Tab:AddButton({
       	local message = "*Медкарта показана*"
 	local message1 = "*Забрал медкарту у человека напротив*"
 	local message2 = "*Легким движением руки положил медкарту в карман*"
-	local message3 = "*Паспорт в кармане*"
+	local message3 = "*Медкарта в кармане*"
 	sendChatMessage(message)
 	wait(1)
 	sendChatMessage(message1)
@@ -182,8 +182,8 @@ PoliceTab:AddButton({
 	Name = "Надеть наручники",
 	Callback = function()
       	local message = "*Наручники на поясе*"
-	local message1 = "*Снял наручник с пояса*"
-	local message2 = "*Наручник в руке*"
+	local message1 = "*Снял наручники с пояса*"
+	local message2 = "*Наручники в руке*"
 	local message3 = "*Резкими движениями накинул наручники*"
 	local message4 = "*Закрепил наручники*"
 	sendChatMessage(message)
@@ -217,6 +217,24 @@ PoliceTab:AddButton({
 	sendChatMessage(message4)
   	end    
 })
+
+PoliceTab:AddButton({
+	Name = "Взять дубинку",
+	Callback = function()
+      	local message = "*Дубинка на поясе*"
+	local message1 = "*Потянулся к дубинке*"
+	local message2 = "*Лёгким движением руки взял дубинку с пояса*"
+	local message3 = "*Дубинка в руке*"
+	sendChatMessage(message)
+	wait(1)
+	sendChatMessage(message1)
+	wait(1)
+	sendChatMessage(message2)
+	wait(1)
+	sendChatMessage(message3)
+  	end    
+})
+
 
 PoliceTab:AddButton({
 	Name = "Удар дубинкой",
@@ -385,11 +403,10 @@ local FightTab = Window:MakeTab({
 FightTab:AddButton({
 	Name = "Бой на кулаках",
 	Callback = function()
-      	local message = "*Замахнулся*"
-	local message1 = "*Ударил в ребро*"
-	local message2 = "*Ударил в подбородок*"
-	local message3 = "*Враг в нокауте*"
-	local message4 = "*Добивает ногой*"
+      	local message = "*Замахнулся правым кулаком*"
+	local message1 = "*Резким движением ударил в грудь*"
+	local message2 = "*Сделал замах левым кулаком*"
+	local message3 = "*Резким движением повторно ударил в грудь*"
 	sendChatMessage(message)
 	wait(1)
 	sendChatMessage(message1)
@@ -397,8 +414,6 @@ FightTab:AddButton({
 	sendChatMessage(message2)
 	wait(1)
 	sendChatMessage(message3)
-	wait(1)
-	sendChatMessage(message4)
   	end    
 })
 
@@ -461,13 +476,10 @@ FightTab:AddButton({
 	Name = "Удар об колено",
 	Callback = function()
       	local message = "*Взял за голову*"
-	local message1 = "*Ударил головой об колено*"
-	local message2 = "*Бьет коленом об голову*"
+	local message1 = "*Резким движением ударил головой об свое колено*"
 	sendChatMessage(message)
 	wait(1)
 	sendChatMessage(message1)
-	wait(1)
-	sendChatMessage(message2)
   	end    
 })
 
@@ -505,7 +517,7 @@ LoseTab:AddButton({
 LoseTab:AddButton({
 	Name = "Нокаут от пули",
 	Callback = function()
-      	local message = "*Пуля попала в тело*"
+      	local message = "*Пуля попала в цель*"
 	local message1 = "*Из раны течет кровь*"
 	local message2 = "*Теряет сознание иза потери крови*"
 	local message3 = "*Упал на пол*"
@@ -696,25 +708,14 @@ HealthTab:AddButton({
 })
 
 CarTab:AddButton({
-	Name = "Заправка машины",
+	Name = "Заправка автомобиля",
 	Callback = function()
-      	local message = "*открыл бензобак*"
-	local message1 = "*Взял заправочный пистолет*"
-	local message2 = "*Вставил заправочный пистолет в бензобак*"
-	local message3 = "*Идёт процесс заправки*"
-	local message4 = "10%"
-	local message5 = "20%"
-	local message6 = "30%"
-	local message7 = "40%"
-	local message8 = "50%"
-	local message9 = "60%"
-	local message10 = "70%"
-	local message11 = "80%"
-	local message12 = "90%"
-	local message13 = "100%"
-	local message14 = "*Вытащил заправочный пистолет из бензобака*"
-	local message15 = "*Поставил заправочный пистолет обратно на стойку*"
-	local message16 = "*Закрыл бензобак*"		
+      	local message = "*Открыл бензобак автомобиля*"
+	local message1 = "*Легким движением руки взял заправочный пистолет со стойки*"
+	local message2 = "*Вставил заправочный пистолет в бензобак автомобиля*"
+	local message3 = "*Спустя время заправил автомобиль*"
+	local message4 = "*Легким движением руки положил заправочный пистолет на стойку*"
+	local message5 = "*Закрыл бензобак*"		
 	sendChatMessage(message)
 	wait(1)
 	sendChatMessage(message1)
@@ -726,28 +727,6 @@ CarTab:AddButton({
 	sendChatMessage(message4)
 	wait(1)
 	sendChatMessage(message5)
-	wait(1)
-	sendChatMessage(message6)
-	wait(1)
-	sendChatMessage(message7)
-	wait(1)
-	sendChatMessage(message8)
-	wait(1)
-	sendChatMessage(message9)
-	wait(1)
-	sendChatMessage(message10)
-	wait(1)
-	sendChatMessage(message11)
-	wait(1)
-	sendChatMessage(message12)
-	wait(1)
-	sendChatMessage(message13)
-	wait(1)
-	sendChatMessage(message14)
-	wait(1)
-	sendChatMessage(message15)
-	wait(1)
-	sendChatMessage(message16)
   	end    
 })
 
@@ -793,11 +772,12 @@ TacTab:AddButton({
 TacTab:AddButton({
 	Name = "Перезарядка пистолета",
 	Callback = function()
-      	local message = "*Патроны закончились*"
+      	local message = "*Патроны на пистолете закончились*"
 	local message1 = "*Вытащил пустой магазин*"
 	local message2 = "*Выкинул пустой магазин*"
 	local message3 = "*Взял из кармана новый магазин*"
 	local message4 = "*Вставил новый магазин в пистолет*"
+	local message5 = "*Пистолет перезаряжен*"
 	sendChatMessage(message)
 	wait(1)
 	sendChatMessage(message1)
@@ -806,7 +786,9 @@ TacTab:AddButton({
 	wait(1)
 	sendChatMessage(message3)
 	wait(1)
-        sendChatMessage(message4)
+    sendChatMessage(message4)
+	wait(1)
+	sendChatMessage(message5)
   	end    
 })
 
@@ -1019,6 +1001,36 @@ PreTab:AddButton({
 	sendChatMessage(message2)
 	wait(1)
 	sendChatMessage(message3)
+  	end    
+})
+
+local InTab = Window:MakeTab({
+	Name = "Инструктаж",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+InTab:AddButton({
+	Name = "Лайт РП",
+	Callback = function()
+      	local message = "РП, где отыгровка легкая, без дополнительных описаний действий"
+	sendChatMessage(message)
+  	end    
+})
+
+InTab:AddButton({
+	Name = "Хард РП",
+	Callback = function()
+      	local message = "РП, где надо описывать все, что с тобой происходит"
+	sendChatMessage(message)
+  	end    
+})
+
+InTab:AddButton({
+	Name = "Френдли РП",
+	Callback = function()
+      	local message = "РП, когда тебя убивают, ты спавнишься в больнице и ты жив-здоров как в ГТА"
+	sendChatMessage(message)
   	end    
 })
 
