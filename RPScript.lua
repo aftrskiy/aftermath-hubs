@@ -1,25 +1,4 @@
 -- fuck niggers
-if not isfolder("ru.sparkstorm.rpscript") then
-	makefolder("keysysconfig")
-	writefile("ban.txt", "")
-end
-
-if isfolder("ru.sparkstorm.rpscript") then
-	readfile("ru.sparkstorm.rpscript/key.txt")
-	local keyss = readfile("ru.sparkstorm.rpscript/key.txt")
-	if keyss == "RP_vbqh1w0l" then
-		print("Whitelisted!")
-	else
-		if not isfolder("keysysconfig") then
-			makefolder("keysysconfig")
-		end
-		writefile("ban.txt", "")
-	end
-end
-
-if isfile("keysysconfig/ban.txt") then
-	game.Players.LocalPlayer:Kick("вы были забанены навсегда. причина: обход ключ системы. обжаловать: тг — @sparkstorm")
-end
 
 chatstatus = "ДОСТУПЕН"
 local function sendChatMessage(message)
@@ -37,7 +16,7 @@ local function sendChatMessage(message)
 end
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/kigredns/guiformyfriend/refs/heads/main/redversion.lua')))()
-local Window = OrionLib:MakeWindow({Name = "RP Hub 2.71 special", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "by sparkstorm"})
+local Window = OrionLib:MakeWindow({Name = "RP Hub 2.75 special", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "by sparkstorm"})
 
 local InfoTab = Window:MakeTab({
 	Name = "Информация",
@@ -48,12 +27,12 @@ local InfoTab = Window:MakeTab({
 InfoTab:AddParagraph("Инфа о скрипте","был написан sparkstorm (бывший aftr или aftrskiy), создатель отыгровок: Zzzzzzoooooodf и 1geriffdu")
 InfoTab:AddLabel("Инжектор: "..identifyexecutor())
 InfoTab:AddLabel("Статус чата: "..chatstatus)
-InfoTab:AddParagraph("ВЕРСИЯ 2.71 | ИЗМЕНЕНИЯ","добавлена вкладка инструктаж | пофикшены ошибки в отыгровках во вкладке общее | новая отыгровка во вкладке полиция. | обновлены отыгровки во вкладках ближний бой, поражение, тактическое, машина")
+InfoTab:AddParagraph("ВЕРСИЯ 2.75 (28.03.2026) | ИЗМЕНЕНИЯ","добавлена новая вкладка ФСБ | новые отыгровки во вкладках преступное, лечение, машина, оборона")
 InfoTab:AddParagraph("концепты","изменение интерфейса в скрипте, добавление вкладки фразы")
 InfoTab:AddButton({
-		Name = "МОЙ НОВЫЙ ПРОЕКТ LUAU",
+		Name = "тут могла быть ваша реклама",
 		Callback = function()
-			setclipboard("https://t.me/luauniversal")
+			setclipboard("нахуй ты на это нажал блять")
 		end
 })
 
@@ -371,7 +350,16 @@ CarTab:AddButton({
   	end    
 })
 
-
+CarTab:AddButton({
+	Name = "Двигатель заглох",
+	Callback = function()
+      	local message = "*Двигатель трещит*"
+	local message1 = "*Двигатель заглох*"
+	sendChatMessage(message)
+	wait(1)
+	sendChatMessage(message1)
+  	end    
+})
 
 local CustomTab = Window:MakeTab({
 	Name = "Кастом",
@@ -648,6 +636,22 @@ ProtectTab:AddButton({
   	end    
 })
 
+ProtectTab:AddButton({
+	Name = "Поломка щита",
+	Callback = function()
+      	local message = "*Щит сломался*"
+	sendChatMessage(message)
+  	end    
+})
+
+ProtectTab:AddButton({
+	Name = "Защита щитом",
+	Callback = function()
+      	local message = "*Закрылся щитом*"
+	sendChatMessage(message)
+  	end    
+})
+
 local HealthTab = Window:MakeTab({
 	Name = "Лечение",
 	Icon = "rbxassetid://4483345998",
@@ -697,6 +701,23 @@ HealthTab:AddButton({
 	local message1 = "*Достал пулю*"
 	local message2 = "*Пуля в зубах*"
 	local message3 = "*Выплюнул пулю*"
+	sendChatMessage(message)
+	wait(1)
+	sendChatMessage(message1)
+	wait(1)
+	sendChatMessage(message2)
+	wait(1)
+	sendChatMessage(message3)
+  	end    
+})
+
+HealthTab:AddButton({
+	Name = "Адреналин",
+	Callback = function()
+      	local message = "*Адреналин в кармане*"
+	local message1 = "*Резким движением руки достал адреналин с кармана*"
+	local message2 = "*Открыл адреналин*"
+	local message3 = "*Воткнул адреналин в бедро*"
 	sendChatMessage(message)
 	wait(1)
 	sendChatMessage(message1)
@@ -1004,6 +1025,29 @@ PreTab:AddButton({
   	end    
 })
 
+PreTab:AddButton({
+	Name = "Взлом двери дома силой",
+	Callback = function()
+      	local message = "*Замахнулся рукой*"
+	local message1 = "*Резким движением руки ударил дверь*"
+	local message2 = "*Дверь повреждена*"
+	local message3 = "*Замахнулся рукой*"
+	local message4 = "*Резким движением руки ударил по двери со всей силой*"
+	local message5 = "*Дверь сломалась*"
+	sendChatMessage(message)
+	wait(1)
+	sendChatMessage(message1)
+	wait(1)
+	sendChatMessage(message2)
+	wait(1)
+	sendChatMessage(message3)
+	wait(1)
+	sendChatMessage(message4)
+	wait(1)
+	sendChatMessage(message5)
+  	end    
+})
+
 local InTab = Window:MakeTab({
 	Name = "Инструктаж",
 	Icon = "rbxassetid://4483345998",
@@ -1034,4 +1078,19 @@ InTab:AddButton({
   	end    
 })
 
+local FSBTab = Window:MakeTab({
+	Name = "ФСБ",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+FSBTab:AddButton({
+	Name = "Показ жетона ФСБ",
+	Callback = function()
+      	local message = "Здравствуйте, я явлюсь сотрудником ФСБ"
+		local message1 = "*указал пальцем на специальный жетон ФСБ*"
+	sendChatMessage(message)
+	sendChatMessage(message1)
+  	end    
+})
 
