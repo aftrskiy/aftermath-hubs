@@ -16,7 +16,7 @@ local function sendChatMessage(message)
 end
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/kigredns/guiformyfriend/refs/heads/main/redversion.lua')))()
-local Window = OrionLib:MakeWindow({Name = "RP Hub 2.75 special", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "by sparkstorm"})
+local Window = OrionLib:MakeWindow({Name = "RP Hub 2.77 special", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "by sparkstorm"})
 
 local InfoTab = Window:MakeTab({
 	Name = "Информация",
@@ -27,7 +27,7 @@ local InfoTab = Window:MakeTab({
 InfoTab:AddParagraph("Инфа о скрипте","был написан sparkstorm (бывший aftr или aftrskiy), создатель отыгровок: Zzzzzzoooooodf и 1geriffdu")
 InfoTab:AddLabel("Инжектор: "..identifyexecutor())
 InfoTab:AddLabel("Статус чата: "..chatstatus)
-InfoTab:AddParagraph("ВЕРСИЯ 2.76 (28.03.2026) | ИЗМЕНЕНИЯ","мелкие исправления | новая отыгровка во вкладке ФСБ")
+InfoTab:AddParagraph("ВЕРСИЯ 2.77 (29.03.2026) | ИЗМЕНЕНИЯ","мелкие исправления | добавлена вкладка ГИБДД | новая отыгровка во вкладке ГИБДД")
 InfoTab:AddParagraph("концепты","изменение интерфейса в скрипте, добавление вкладки фразы")
 InfoTab:AddButton({
 		Name = "тут могла быть ваша реклама",
@@ -1104,6 +1104,36 @@ FSBTab:AddButton({
 		local message3 = "*Выстрельнул из тайзера*"
 		local message4 = "*Попал в человека спереди*"
 		local message5 = "*Тот судорожно упал*"
+	sendChatMessage(message)
+	wait(1)
+	sendChatMessage(message1)
+	wait(1)
+    sendChatMessage(message2)
+	wait(1)
+	sendChatMessage(message3)
+	wait(1)
+	sendChatMessage(message4)
+	wait(1)
+	sendChatMessage(message5)
+  	end    
+})
+
+
+local GIBDDTab = Window:MakeTab({
+	Name = "ГИБДД",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+GIBDDTab:AddButton({
+	Name = "Служебный паспорт",
+	Callback = function()
+      	local message = "*Служебный паспорт в кармане*"
+		local message1 = "*Сунул руку в карман*"
+		local message2 = "*Взял служебный паспорт*"
+		local message3 = "*Вытянул руку из кармана*"
+		local message4 = "*Легким движением руки предъявил служебный паспорт*"
+		local message5 = "*Положил служебный паспорт в карман*"
 	sendChatMessage(message)
 	wait(1)
 	sendChatMessage(message1)
