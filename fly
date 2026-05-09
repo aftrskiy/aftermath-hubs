@@ -1,10 +1,4 @@
-flytext = getgenv()
-if getgenv() = chichis then
-   flytext = "Pidoras Fly 14.88"
-end
-if not getgenv() then
-   flytext = "AntiOder Fly 2.2"
-end
+
 -- v2 lol
 local main = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -74,7 +68,7 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 TextLabel.Position = UDim2.new(0.469327301, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 100, 0, 28)
 TextLabel.FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-TextLabel.Text = flytext
+TextLabel.Text = "AntiOderi Pidorasi! Hacked by Oders."
 TextLabel.TextColor3 = Color3.new(0, 255, 0) 
 TextLabel.TextScaled = true
 TextLabel.TextSize = 13.250
